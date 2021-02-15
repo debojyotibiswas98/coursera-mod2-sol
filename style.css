@@ -1,4 +1,4 @@
-/********** Base styles **********/
+	/********** Base styles **********/
 * {
   box-sizing: border-box;
 }
@@ -34,22 +34,6 @@ h1 {
   }
 }
 
-
-/********** tab devices only **********/
-@media (min-width: 768px) and (max-width: 991px) {
-  .tab1 {
-    width: 50%;
-    float: left;
-  }
-  .tab2 {
-    width: 50%;
-    float: right;
-  }
-  .tab3 {
-    width: 100%;
-    clear: both;
-  }
-}
 /********** mobile devices only **********/
 @media (max-width: 767px) {
   .tab1 {
@@ -64,6 +48,23 @@ h1 {
     width: 100%;
   }
 }
+
+/********** tab devices only **********/
+@media (min-width: 768px) and (max-width: 991px) {
+  .tab1 {
+   width: 100%;
+    float: left;
+  }
+  .tab2 {
+    width: 50%;
+    float: right;
+  }
+  .tab3 {
+    width: 100%;
+    clear: both;
+  }
+}
+
 h1 {
   margin-bottom: 30px;
   text-align: center;
