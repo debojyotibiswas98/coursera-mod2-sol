@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<style>
+	
+	/********** Base styles **********/
+* {
+  box-sizing: border-box;
+}
+h1 {
+  margin-bottom: 15px;
+}
+
+#tab1 {
+    width: 100%;
+    clear: both;
+  }
+#tab2 {
+    width: 100%;
+  }
+#tab3 {
+    width: 100%;
+  }
+
+
+/********** desktop devices only **********/
+@media (min-width: 992px) {
+  .tab1 {
+    width: 33%;
+    float: left;
+  }
+  .tab2 {
+    width: 33%;
+    float: left;
+  }
+  .tab3 {
+    width: 33%;
+    float:left; 
+  }
+}
+
+
+/********** tab devices only **********/
+@media (min-width: 768px) and (max-width: 991px) {
+  .tab1 {
+    width: 50%;
+    float: left;
+  }
+  .tab2 {
+    width: 50%;
+    float: right;
+  }
+  .tab3 {
+    width: 100%;
+    clear: both;
+  }
+}
+/********** mobile devices only **********/
+@media (max-width: 767px) {
+  .tab1 {
+    width: 100%;
+    
+  }
+  .tab2 {
+    width: 100%;
+
+  }
+  .tab3 {
+    width: 100%;
+  }
+}
+h1 {
+  margin-bottom: 30px;
+  text-align: center;
+  }
+article {
+    border: 1px outset black;
+    background-color: lightblue;
+    text-align: center;
+    position: relative;
+    top=0;
+    left=0;
+    /*margin-left: 630px;*/
+    font-size: 36px;
+	}
+
+#box {
+  background-color: grey;
+  padding: 10px;
+  border: 1px solid black;
+  margin-top: 50px;
+  text-align: center;
+  }
+</style>
+</head>
+<title>Assignment 1 : Our Menu</title>
+<link rel="stylesheet" type="text/css" href="style.css">
+<body>
+
+<h1>Our Menu</h1>
+
+<div>
+  
+  <div id="box" class="tab1"><article>Chicken</article>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi efficitur sollicitudin nulla sed aliquam. Proin ornare semper turpis id hendrerit. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas sagittis scelerisque suscipit. Nullam rutrum nulla nisl, tincidunt rhoncus diam tristique vitae. Sed non erat ac arcu egestas volutpat. Sed vitae massa accumsan, placerat risus et, tempor sapien. Donec lacinia tellus et nunc mollis tempus.</div>
+</div> 
+
+
+  
+  <div id="box" class="tab1"><article>Beef</article>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi efficitur sollicitudin nulla sed aliquam. Proin ornare semper turpis id hendrerit. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas sagittis scelerisque suscipit. Nullam rutrum nulla nisl, tincidunt rhoncus diam tristique vitae. Sed non erat ac arcu egestas volutpat. Sed vitae massa accumsan, placerat risus et, tempor sapien. Donec lacinia tellus et nunc mollis tempus.</div>
+
+  
+  <div id="box" class="tab1"><article>Sushi</article>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi efficitur sollicitudin nulla sed aliquam. Proin ornare semper turpis id hendrerit. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas sagittis scelerisque suscipit. Nullam rutrum nulla nisl, tincidunt rhoncus diam tristique vitae. Sed non erat ac arcu egestas volutpat. Sed vitae massa accumsan, placerat risus et, tempor sapien. Donec lacinia tellus et nunc mollis tempus.</div>
+</div>
+
+
+</body>
+</html>
