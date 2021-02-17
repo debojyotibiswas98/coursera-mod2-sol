@@ -1,74 +1,5 @@
 	/********** Base styles **********/
-* {
-  box-sizing: border-box;
-}
-h1 {
-  margin-bottom: 15px;
-}
 
-#tab1 {
-    width: 100%;
-    clear: both;
-  }
-#tab2 {
-    width: 100%;
-  }
-#tab3 {
-    width: 100%;
-  }
-
-
-/********** desktop devices only **********/
-@media (min-width: 992px) {
-  .tab1 {
-    width: 33%;
-    float: left;
-  }
-  .tab2 {
-    width: 33%;
-    float: left;
-  }
-  .tab3 {
-    width: 33%;
-    float:left; 
-  }
-}
-
-/********** mobile devices only **********/
-@media (max-width: 767px) {
-  .tab1 {
-    width: 100%;
-    
-  }
-  .tab2 {
-    width: 100%;
-
-  }
-  .tab3 {
-    width: 100%;
-  }
-}
-
-/********** tab devices only **********/
-@media (min-width: 768px) and (max-width: 991px) {
-  .tab1 {
-   width: 100%;
-    float: left;
-  }
-  .tab2 {
-    width: 50%;
-    float: right;
-  }
-  .tab3 {
-    width: 100%;
-    clear: both;
-  }
-}
-
-h1 {
-  margin-bottom: 30px;
-  text-align: center;
-  }
 article {
     border: 1px outset black;
     background-color: lightblue;
@@ -87,3 +18,95 @@ article {
   margin-top: 50px;
   text-align: center;
   }
+*{
+	box-sizing: border-box;
+}
+body{
+	margin: 10px;
+}
+h1{
+	text-align: center;
+	margin-bottom: 30px;
+	font-size: 1.75em;
+}
+#chicken{
+	background-color: #ff9999;
+}
+#beef{
+	background-color: #e60000;
+}
+#sushi{
+	background-color: #ffff66;
+}
+.heading{
+	font-size: 1.25em;
+	float: right;
+	position: absolute;
+	top: 0px;
+	right: 0px;
+	border: 1px solid black;
+	padding-left: 5px;
+	padding-right: 5px;
+	width: 120px;
+	text-align: center;
+	padding-top: 5px;
+	padding-bottom: 5px;
+}
+.content{
+	background-color: #696969;
+	margin: 5px;
+	padding: 40px 10px 40px 10px;
+	position: relative;
+	clear: both;
+	border: 1px solid black;
+}
+.content > .heading{
+	font-size: 1.25em;
+}
+
+/********** desktop devices only **********/
+
+@media (min-width: 992px){
+	div .row1,.row2,.row3{
+		width: 33.33%;
+		float: left;
+		box-sizing: border-box;
+		padding: 5px;
+		font-size: 14px;
+	}
+}
+
+/********** tab devices only **********/
+
+@media (min-width: 768px) and (max-width: 991px){
+	div .row1,.row2{
+		width: 50%;
+		float: left;
+		box-sizing: border-box;
+		padding: 5px;
+		font-size: 14px;
+		padding-bottom: 10px;
+	}
+	div > .row3{
+		width: 100%;
+		float: left;
+		box-sizing: border-box;
+		padding: 5px;
+		font-size: 14px;
+		padding-bottom: 10px;
+	}
+}
+
+/********** mobile devices only **********/
+
+@media (max-width: 767px){
+	div .row1,.row2,.row3{
+		width: 100%;
+		float: left;
+		box-sizing: border-box;
+		padding-right: 10px;
+		padding-left: 10px;
+		padding-bottom: 10px;
+		font-size: 14px;
+	}
+}
